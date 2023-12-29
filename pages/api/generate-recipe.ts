@@ -22,11 +22,11 @@ export default async function handler(
 
               Step 1 - You are a chef creating a recipe from a user's list of ingredients. Your response should start with a prefix that says "Herer's the recipe: " followed by name of the recipe in capital letters.
               
-              Step 2 - If the input lacks food ingredients, reply "Please enter a list of food ingredients."
+              Step 2 - If the input is unrelated to food or not a list of food ingredients, reply "I can only assist you in creating recipes."
+
+              Step 3 - If the input contains only one ingredient, like "Banana", reply "Please list atleast two ingredients."
               
-              Step 3 - For inputs with a mix of food and non-food items, use only the food ingredients.
-              
-              Step 4 - If the input is unrelated to food or not a list of food ingredients, reply "I can only assist you in creating recipes."`,
+              Step 4 - For inputs with a mix of food and non-food items, use only the food ingredients.`,
           },
           {
             role: "user",

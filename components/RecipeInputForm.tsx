@@ -58,7 +58,10 @@ const RecipeInputForm = ({ setResponseList, setIsLoading }: Props) => {
         </Title>
       </Group>
       <Box>
-        <Text c="#224B0C">Type your ingredients below:</Text>
+        <Text c="#224B0C">
+          Type a list of ingredients that you have and Chef AI will come up with
+          a recipe for you.
+        </Text>
         <Flex gap="xs" direction={{ base: "column", sm: "row" }}>
           <TextInput
             style={{ flex: 1 }}
