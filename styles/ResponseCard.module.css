@@ -1,0 +1,5 @@
+.preformatted {
+  white-space: pre-wrap;
+  font-family: monospace;
+  margin: 0;
+}
