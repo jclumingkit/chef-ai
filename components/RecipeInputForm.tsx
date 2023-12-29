@@ -59,7 +59,7 @@ const RecipeInputForm = ({ setResponseList, setIsLoading }: Props) => {
       </Group>
       <Box>
         <Text c="#224B0C">Type your ingredients below:</Text>
-        <Flex gap="xs">
+        <Flex gap="xs" direction={{ base: "column", sm: "row" }}>
           <TextInput
             style={{ flex: 1 }}
             placeholder="Banana, flour, sugar"
