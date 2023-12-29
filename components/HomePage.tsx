@@ -22,7 +22,10 @@ const HomePage = () => {
     <Container bg="#FDEEDC" p="md" mih="100vh" fluid>
       <Space h="lg" />
       <Stack mx="auto" maw={600} pos="relative">
-        <LoadingOverlay overlayProps={{ blur: 2 }} visible={isLoading} />
+        <LoadingOverlay
+          overlayProps={{ blur: 2, color: "#FDEEDC" }}
+          visible={isLoading}
+        />
         <RecipeInputForm
           setResponseList={setResponseList}
           setIsLoading={setIsLoading}
